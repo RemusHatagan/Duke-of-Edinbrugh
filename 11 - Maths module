@@ -1,0 +1,102 @@
+# Challenge 1
+
+number = float(input("Enter a number with lots of decimals >>> "))
+product = number * 2
+print("Your number is :",product)
+
+# Challenge 2
+
+number = float(input("Enter a number with lots of decimals >>> "))
+product = number * 2
+product2DP = round(product,2)
+print("Your number is :",product2DP)
+
+# Challenge 3
+
+import math
+
+number = int(input("Enter an integer that is over 500 >>> "))
+sqrRoot = math.sqrt(number)
+print("The square root of your number is :",(round(sqrRoot,2)))
+
+# Challenge 4
+
+import math
+
+PI = math.pi
+PIshort = round(PI,5)
+print(PIshort)
+
+# Challenge 5
+
+import math
+
+r = float(input("Enter the radius of your circle (CM) >>> "))
+aCircle = math.pi * (r**2)
+aCircleRnd = round(aCircle,4)
+print(aCircleRnd,"CM")
+
+# Challenge 6
+
+import math
+
+r = float(input("Enter the radius of your circle (CM) >>> "))
+depth = float(input("Enter the depth of your cylinder (CM) >>> "))
+aCircle = math.pi * (r**2)
+volume = aCircle * depth
+volume3DP = round(volume,3)
+print("Your cylinder's volume to 3 Decimal Places is",volume3DP,"CM")
+
+# Challenge 7
+
+import math
+
+num1 = int(input("Enter number 1 >>> "))
+num2 = int(input("Enter number 2 >>> "))
+
+
+div = num1 // num2
+reminder = num1 - (num2 * div)
+
+print(num1,"divided by",num2,"is",div,"with",reminder,"remaining.")
+
+# OR reminder = num1 % num2
+# print(num1,"divided by",num2,"is",div,"with",reminder,"remaining.")
+
+# Challenge 8
+
+import math
+
+def redo():
+    again = str(input("Do you want to calculate another area? (Y/N) >>> "))
+    if again == "Y":
+        selection()
+    elif again == "N":
+        print("Have a nice day then!")
+        exit()
+    
+def selection():
+    areaSelect = int(input('Do you want to calculate the area of a Triangle (1), or area of a Square (2) ? >> '))
+    if areaSelect == 1:
+        length = float(input("What is the length of the base? (CM) >>> "))
+        height = float(input("What is the height of the triangle? (CM) >>> "))
+        triangleArea = 0.5 * (length * height)
+        print("The area of your triangle is :",triangleArea,"CM.")
+        redo()
+    elif areaSelect == 2:
+        length = float(input("What is the length of the square / rectangle? (CM) >>> "))
+        height = float(input("What is the height of the square / rectangle? (CM) >>> "))
+        sqrRectArea =length * height
+        print("The area of your square / rectangle is :",sqrRectArea,"CM.")
+        redo()
+    
+print('Hello! Welcome to the Square, Rectangle and Triangle Area Calculator!') 
+
+choice = str(input("Would you like to calculate an area? (Y/N) >>> "))
+
+if choice == "Y":
+    selection()
+    
+if choice == "N":
+    print("Have a nice day then!")
+    exit()
