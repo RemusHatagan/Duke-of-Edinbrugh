@@ -1,0 +1,21 @@
+# Python - Selection (IF statements)
+
+# Task 1 - Basic if statement - Guess my number
+
+number = 4
+answer = int(input("Guess my number from 1 to 5 >>>"))
+if answer == 4:
+  print("You have guessed my number!")
+if answer != 4:
+  print("That is not the right answer!")
+
+
+# Python - Selection (IF/ELSE Statements)
+
+# Task 1 - Basic if/else statements - old enough to drive
+
+age = int(input("Please enter your age >>> "))
+if age >= 17:
+  print("You are old enough to drive.")
+else:
+  print("You are not old enough to drive!!")
