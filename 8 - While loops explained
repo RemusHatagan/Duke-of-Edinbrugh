@@ -1,0 +1,93 @@
+# Challenge 045
+
+total = 0
+while total <= 50:
+  num = int(input("Enter a number >>> "))
+  total = total + num
+print("The total is ",total)
+
+
+# Challenge 046
+
+num = 0
+while num< 5:
+  num = int(input("Enter a number >>> "))
+print("The last number you entered was",num)
+
+
+# Challenge 047
+
+total = 0
+addNumber = "yes"
+while addNumber == "yes":
+  num=int(input("Enter a number >>> "))
+  total = total + num
+  2addNumber=input("Do you want to add another number? (yes/no)")
+if addNumber == "no":
+  print("Your total number is:",total)
+
+
+# Challenge 048
+
+count = 0
+invite = "Y"
+while invite == "Y":
+  invite = input("Do you want to invite a person? (Y/N) >>> ")
+  if invite == "Y":
+    name = ""
+    while not name:
+      name = input("Please enter their name >>> ")
+    count = count + 1
+  if invite == "N":
+    print("The number of people coming to the party is",count)
+
+
+# Challenge 049
+
+tries = 0
+compnum = 50
+guess = int(input("Guess a number >>> "))
+while guess != 50:
+  if guess > compnum:
+    print("Your guess is too high!")
+    tries = tries + 1
+    guess =(int(input("Guess another number >>> ")))
+  elif guess < compnum:
+    print("Your guess is too low!")
+    tries = tries + 1
+    guess =(int(input("Guess another number >>> ")))
+
+if guess == compnum:
+  print("Congratulations!!! You guessed the number in",tries,"tries!!!")
+
+# Challenge 050
+
+number = int(input("Please enter a number between 10 and 20 >>>"))
+while number < 10:
+   print("Too low.")
+   number = int(input("Please enter a number between 10 and 20 >>>"))
+while number > 20:
+   print("Too high.")
+   number = int(input("Please enter a number between 10 and 20 >>>"))
+if 10 < number < 20: 
+  print("Thank you!")
+
+# Challenge 051
+
+bottles = 10
+while 0 < bottles <= 10 :
+  print(bottles,"green bottles hanging on the wall")
+  print(bottles,"green bottles hanging on the wall")
+  bottles= bottles - 1
+  guess =int(input("And if 1 green bottle should accidentally fall. How many green bottles will there be hanging on the wall?"))
+  if guess == bottles:
+    print(bottles,"green bottles hanging on the wall")
+    print(bottles,"green bottles hanging on the wall")
+    bottles= bottles - 1
+    guess =int(input("And if 1 green bottle should accidentally fall. How many green bottles will there be hanging on the wall?"))
+  while guess != bottles:
+    print("No, try again!")
+    guess =int(input("And if 1 green bottle should accidentally fall. How many green bottles will there be hanging on the wall?"))
+
+if bottles <= 0:
+  print("There are no more green bottles hanging on the wall!")
