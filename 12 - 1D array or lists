@@ -1,0 +1,92 @@
+# Challenge 1
+
+cars = []
+cars.append(input("Name one car brand >>> "))
+cars.append(input("Name a second car brand >>> "))
+cars.append(input("Name a third car brand >>> "))
+print(cars)
+
+# Challenge 2
+
+cars = []
+ 
+sentry = True
+ 
+while sentry == True:
+    newCar =(str(input("Name one car brand or type 'X' to exit. ")))
+    cars.append(newCar)
+    if newCar == "X":
+        print(cars)
+        exit()
+
+# Challenge 3
+
+names = []
+sentry = False
+for i in range(3):
+    newName =(str(input("Name one friend you wish to invite to the party >>> ")))
+    names.append(newName)
+ 
+moreNames = str(input("Do you wish to add more people to your party? (Y/N) >>> "))
+if moreNames == "Y":
+    sentry = True
+    while sentry == True:
+        newName2 =(str(input("Name one friend you wish to invite to the party or type 'X' to exit. >>> ")))
+        names.append(newName2)
+        if newName2 == "X":
+            print("All the friends you invited to the party are :",names)
+            exit()
+if moreNames == "N":
+    exit()
+    
+# Challenge 4
+
+
+shows = [
+        "Big Bang Theory",
+        "Hell's Kitchen",
+        "No Return",
+        "Stranger Things",
+        ]
+for i in shows:
+    print(i)
+ 
+newShow = str(input("Enter another TV Show >>> "))
+ 
+location = int(input("Enter a location from 1 and 4 >>> "))
+ 
+shows.insert(location-1, newShow)
+ 
+print(shows)
+
+# Challenge 5
+
+food = []
+for i in range(4):
+    newFood = str(input("Enter a type of food: >>> "))
+    food.append(newFood)
+print(food)
+deletion = int(input("Which food do you wish to remove? (1-4) >>> "))
+food.remove(deletion-1)
+print(food)
+
+# Challenge 6
+
+nums = []
+for i in range(3):
+    newNum = int(input("Enter a number >>> "))
+    nums.append(newNum)
+choice = str(input("Do you still want the last number entered? (Y/N) >>> "))
+if choice == "N":
+    nums.remove(newNum)
+    exit
+print(nums)
+
+# Challenge 7
+
+num = [3, 8, 27, 41, 67]
+print(num)
+newNum = int(input("Enter a location (1-5). >>> "))
+number = int(input("Which number do you wish to change it to? >>> "))
+num[newNum-1] = number
+print(num)
