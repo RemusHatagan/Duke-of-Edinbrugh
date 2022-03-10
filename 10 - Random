@@ -1,0 +1,171 @@
+# Challenge 052
+
+import random
+num = random.randint(0,100)
+print(num)
+
+# Challenge 053
+
+import random
+fruit = random.choice(["apple","banana","plum","strawberry","mango"])
+print(fruit)
+
+# Challenge 054
+
+import random
+ 
+choice =input("Heads or tails? (H/T) >>>")
+outcome = random.choice(["H","T"])
+if choice == outcome:
+  print("You win!")
+else:
+  print("Bad luck!")
+
+# Challenge 055
+
+import random
+ 
+num = random.randint(1,5)
+ 
+def main():
+  choice = int(input("Choose a number from 1 to 5 >>>"))
+  if choice == num:
+    print("You win!!")  
+  if choice > num:
+    print("Too High! Choose another number")
+    main()
+  if choice < num:
+    print("Too Low! Choose another number")
+    main()
+main()
+
+
+
+
+# Challenge 056
+
+import random
+ 
+num = random.randint(1,10)
+ 
+def main():
+  choice = int(input("Choose a number from 1 to 10 >>>"))
+  if choice == num:
+    print("You win!!")  
+  if choice != num:
+    print("Wrong! Choose another number.")
+    main()
+main()
+
+# Challenge 057
+
+import random
+ 
+num = random.randint(1,10)
+ 
+def main():
+  choice = int(input("Choose a number from 1 to 10 >>>"))
+  if choice == num:
+    print("You win!!")  
+  if choice > num:
+    print("Too High! Choose another number")
+    main()
+  if choice < num:
+    print("Too Low! Choose another number")
+    main()
+main()
+
+# Challenge 058
+
+import random
+score = 0
+ 
+num1 = random.randint(0,15)
+num2 = random.randint(0,20)
+sum1 = num1 + num2
+ 
+num3 = random.randint(0,15)
+num4 = random.randint(0,20)
+sum2 = num3 - num4
+ 
+num5 = random.randint(0,15)
+num6 = random.randint(0,20)
+sum3 = num5 * num6
+ 
+num7 = random.randint(0,10)
+num8 = random.randint(0,3)
+sum4 = num7 ** num8
+ 
+num9 = random.randint(0,20)
+num10 = random.randint(0,15)
+sum5 = num9 / num10
+ 
+print("Question 1. ",num1,"+",num2,"=?")
+problem1 = int(input("What is the answer?"))
+if problem1 == sum1:
+  print("Correct!")
+  score = score + 1
+else:
+  print("Wrong!")
+ 
+print("Question 2. ",num3,"-",num4,"=?")
+problem2 = int(input("What is the answer?"))
+if problem2 == sum2:
+  print("Correct!")
+  score = score + 1
+else:
+  print("Wrong!")
+ 
+print("Question 3. ",num5,"*",num6,"=?")
+problem3 = int(input("What is the answer?"))
+if problem3 == sum3:
+  print("Correct!")
+  score = score + 1
+else:
+  print("Wrong!")
+ 
+print("Question 4. ",num7,"**",num8,"=?")
+problem4 = int(input("What is the answer?"))
+if problem4 == sum4:
+  print("Correct!")
+  score = score + 1
+else:
+  print("Wrong!")
+ 
+print("Question 5. ",num9,"divided by",num10)
+problem5 = int(input("What is the answer?"))
+if problem5 == sum5:
+  print("Correct!")
+  score = score + 1
+else:
+  print("Wrong!")
+ 
+print("Your score is ",score,"out of 5 !!")
+ 
+
+
+# Challenge 059
+
+import random
+ 
+colours = random.choice(["blue","green","red","yellow","purple"])
+ 
+def main():
+  guess = input("Choose a colour from : blue , green , red , yellow , purple >>> ")
+ 
+  if guess == colours:
+    print("Well done!")
+ 
+  if guess != colours:
+    if colours == "blue":
+      print("You must be feeling BLUE right now.")
+    elif colours == "green":
+      print("I bet you are GREEN with envy.")
+    elif colours == "red":
+      print("You must be flaming RED with anger.")
+    elif colours == "yellow":
+      print("The sun is more YELLOW than ever")
+    elif colours == "purple":
+      print("You became PURPLE like a plum.")
+    main()
+main()
