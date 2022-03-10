@@ -1,0 +1,47 @@
+# 5 - Create a small program (Register a new player)
+# Display a title stating: Gaming league registration.
+# Ask the player to enter: first name, last name, nickname, and email address.
+# Ask the player to enter a skill level, using E for ‘Expert’ or C for ‘Casual’.
+# Display the player’s personal details on the screen.
+# If the player entered E then ‘Expert’ should be displayed; if they entered C then ‘Casual’ should be displayed.
+# Ask the player to confirm that all of the personal details are correct.
+# If any detail is incorrect, ask the player to re-enter all of the personal details and display them again.
+# Return to the title message (Gaming league registration.)
+
+def main():
+  print("")
+  print("League Registration")
+  print("")
+  
+  fName=input("Enter first name >>>")
+  lName=input("Enter last name >>>")
+  username=input("Enter your username >>>")
+  email=input("Enter your email >>>")
+  skill=input("Enter skill level - E for expert or C for casual >>>")
+  print("Please review your details.")
+  
+  print("")
+  
+  print("First name is ",fName)
+  print("Last name is ",lName)
+  print("Email address is ",email)
+  
+  if skill == "E":
+     print("Skill level is Expert (E)")
+  elif skill == "C":
+    print("Skill level is Casual (C)")
+  else:
+    print("Error in selecting skill level!")
+    print("Please try again.")
+    main()
+    
+  confirmation = input("Are these details correct? - Y/N")
+  
+  if confirmation == "Y":
+    print("Registered successfully! Thank you!")
+    main()
+  if confirmation == "N":
+    print("Please re-enter your details.")
+    main()
+    
+main()
