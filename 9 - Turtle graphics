@@ -1,0 +1,247 @@
+# Challenge 060
+
+import turtle
+ 
+for i in range(0,4):
+  turtle.forward(100)
+  turtle.right(90)
+ 
+turtle.exitonclick()
+
+# Challenge 061
+
+import turtle
+ 
+for i in range(0,1):
+  turtle.forward(100)
+  turtle.right(120)
+  turtle.forward(100)
+  turtle.right(120)
+  turtle.forward(100)
+   
+turtle.exitonclick()
+
+# Challenge 062
+
+import turtle
+ 
+for i in range(0,360):
+  turtle.forward(1)
+  turtle.right(1)
+ 
+turtle.exitonclick()
+
+# Challenge 063
+
+import turtle
+ 
+window = turtle.Screen()
+turtle.speed(5)
+turtle.pensize(5)
+ 
+turtle.penup()
+turtle.goto(-350, 100)
+turtle.pendown()
+turtle.color("magenta")
+ 
+turtle.begin_fill()
+turtle.forward(150)
+turtle.left(90)
+turtle.forward(150)
+turtle.left(90)
+turtle.forward(150)
+turtle.left(90)
+turtle.forward(150)
+turtle.left(90)
+turtle.penup()
+turtle.end_fill()
+ 
+turtle.goto(-150, 250)
+turtle.color("red")
+turtle.pendown()
+turtle.begin_fill()
+for i in range(4):
+  turtle.forward(150)
+  turtle.right(90)
+turtle.end_fill()
+turtle.penup()
+ 
+turtle.goto(50, 250)
+turtle.color("yellow")
+turtle.pendown()
+turtle.begin_fill()
+for i in range(4):
+  turtle.forward(150)
+  turtle.right(90)
+turtle.end_fill()
+turtle.penup()
+ 
+turtle.exitonclick()
+
+# Challenge 064
+
+import turtle
+ 
+t = turtle.Turtle()
+ 
+t.left(36)
+ 
+for i in range(5):
+  t.forward(200)
+  t.left(144)
+ 
+ 
+turtle.exitonclick()
+ 
+
+# Challenge 065
+
+import turtle
+ 
+turtle.penup()
+turtle.goto(0,0)
+turtle.pendown()
+ 
+turtle.goto(0,100)
+turtle.penup()
+turtle.goto(50,100)
+turtle.pendown()
+turtle.goto(150,100)
+turtle.goto(150,50)
+turtle.goto(50,50)
+turtle.goto(50,0)
+turtle.goto(150,0)
+ 
+turtle.penup()
+turtle.goto(200,100)
+turtle.pendown()
+turtle.goto(300,100)
+turtle.goto(300,50)
+turtle.goto(250,50)
+turtle.goto(300,50)
+turtle.goto(300,0)
+turtle.goto(200,0
+)
+turtle.exitonclick()
+
+# Challenge 066
+
+import turtle, random
+colorChange = "yes"
+colours = ["green","red","magenta","blue","yellow","orange","pink","black"]
+ 
+ 
+ 
+theColour = random.choice(colours)
+ 
+turtle.color(theColour)
+turtle.forward(100)
+turtle.right(45)
+theColour = random.choice(colours)
+turtle.color(theColour)
+turtle.forward(100)
+turtle.right(45)
+theColour = random.choice(colours)
+turtle.color(theColour)
+turtle.forward(100)
+turtle.right(45)
+theColour = random.choice(colours)
+turtle.color(theColour)
+turtle.forward(100)
+turtle.right(45)
+theColour = random.choice(colours)
+turtle.color(theColour)
+turtle.forward(100)
+turtle.right(45)
+theColour = random.choice(colours)
+turtle.color(theColour)
+turtle.forward(100)
+turtle.right(45)
+theColour = random.choice(colours)
+turtle.color(theColour)
+turtle.forward(100)
+turtle.right(45)
+theColour = random.choice(colours)
+turtle.color(theColour)
+turtle.forward(100)
+turtle.right(45)
+theColour = random.choice(colours)
+ 
+ 
+turtle.exitonclick()
+
+# Challenge 077
+
+mport turtle
+ 
+turtle.speed(5)
+ 
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+ 
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+ 
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+turtle.right(30)
+for i in range(8):
+  turtle.forward(100)
+  turtle.right(45)
+ 
+turtle.exitonclick()
+
+Challenge 068
+
+import turtle, random
+ 
+number=50
+ 
+for x in range(number):
+  turtle.forward(random.randint(0,100))
+  turtle.right(random.randint(0,180))
+ 
+ 
+ 
+turtle.exitonclick()
