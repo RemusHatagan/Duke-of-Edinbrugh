@@ -1,0 +1,36 @@
+def main():
+  print("")
+  print("Welcome to the fee calculator!")
+  print("")
+  
+  fee =int(10)
+  
+  email=input("Enter your email >>>")
+  skill=input("Enter skill level - E for expert or C for casual >>>")
+  country=input("Enter country (UK/US/AU) >>>")
+  
+  print("")
+  
+  if skill == "E":
+     fee = fee + 35
+  elif skill == "C":
+    fee = fee + 20
+    
+  if country == "UK":
+    fee = fee
+    print("The UK fee is - ",fee,"GBP")
+  elif country == "US":
+    fee = fee*1.50
+    print("The US fee is - ",fee,"USD")
+  elif country == "AU":
+    fee = fee*2
+    print("The AU fee is - ",fee,"AUD")
+      
+ 
+    
+  redo = input("Do you wish to calculate another fee? - Y/N")
+  
+  if redo == "Y":
+    main()
+  
+main()
