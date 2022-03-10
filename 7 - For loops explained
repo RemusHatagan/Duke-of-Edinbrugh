@@ -1,0 +1,46 @@
+def main():
+  print("Welcome to the magic calculator!!!!")
+
+  times_table=int(input("Which times table do you wish to see? (2-12) >>>"))
+  
+  if times_table > 12:
+    print("Sorry, we don't have that times table yet.")
+    
+  if times_table == 2:
+    for loopCounter in range(2,25,2):
+      print(loopCounter)
+  elif times_table == 3:
+    for loopCounter in range(3,37,3):
+      print(loopCounter)
+  elif times_table == 4:
+    for loopCounter in range(4,49,4):
+      print(loopCounter)
+  elif times_table == 5:
+    for loopCounter in range(5,61,5):
+      print(loopCounter)
+  elif times_table == 6:
+    for loopCounter in range(6,73,6):
+      print(loopCounter)
+  elif times_table == 7:
+    for loopCounter in range(7,85,7):
+      print(loopCounter)
+  elif times_table == 8:
+    for loopCounter in range(8,97,8):
+      print(loopCounter)
+  elif times_table == 9:
+    for loopCounter in range(9,109,9):
+      print(loopCounter)
+  elif times_table == 10:
+    for loopCounter in range(10,121,10):
+      print(loopCounter)
+  elif times_table == 11:
+    for loopCounter in range(11,133,11):
+      print(loopCounter)
+  elif times_table == 12:
+    for loopCounter in range(12,145,12):
+      print(loopCounter)
+      
+  repeat = input("Do you wish to see another times table? (Y/N) >>>")
+  if repeat == "Y":
+    main()
+main()
