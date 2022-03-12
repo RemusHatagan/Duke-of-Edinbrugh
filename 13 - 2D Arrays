@@ -1,10 +1,65 @@
 # Challenge 1
 
 MySpaceCompany = []
-print(MySpaceCompany)
-for i in range(3):
-    spaceVehicle = input("Enter a type of space vehicle ")
-    MySpaceCompany.append(spaceVehicle)
+MySpaceCompany.append(str(input("Enter the first vehicle >>> ")))
+MySpaceCompany.append(str(input("Enter the second vehicle >>> ")))
+MySpaceCompany.append(str(input("Enter the third vehicle >>> ")))
 print(MySpaceCompany)
 
 # Challenge 2
+
+MySpaceCompany = ["Rocket Pack","Moon Base","Moon buggy"]
+print(MySpaceCompany)
+MySpaceCompany[0] = "Rich people going to Mars"
+print(MySpaceCompany)
+MySpaceCompany[1] = "Rich people going to the Moon"
+print(MySpaceCompany)
+
+# Challenge 3
+
+Stuff = [
+        ["1","2","3","4"],
+        ["a","b","c","d"],
+        ["I","II","III","IV"],
+        ]
+print(Stuff)
+Stuff[1][2] = "Croydon"
+print(Stuff)
+
+# Challenge 4
+
+OuterArray = []
+InnerArray1 = []
+InnerArray2 = []
+print(OuterArray)
+OuterArray.append(InnerArray1)
+print(OuterArray)
+OuterArray.append(InnerArray2)
+print(OuterArray)
+
+# Challenge 5
+
+range1 = int(input("Enter the first range >>> "))
+range2 = int(input("Enter the second range >>> "))
+EmptyArray = [["a" for column in range(range1)]for row in range(range2)]
+print(EmptyArray)
+
+# Challenge 6
+
+range1 = int(input("Enter the number of columns >>> "))
+range2 = int(input("Enter the number of rows >>> "))
+
+EmptyArray = [
+    [0 for column in range(range1)]
+    for row in range(range2)]
+print(EmptyArray)
+
+rowChange = int(input("What row index? >>> ")) - 1
+columnChange = int(input("What column index? >>> ")) - 1
+valueChange = int(input("What integer? >>> "))
+
+print(valueChange)
+print(EmptyArray[0][1])
+
+EmptyArray[rowChange][columnChange] = valueChange
+print(EmptyArray)
