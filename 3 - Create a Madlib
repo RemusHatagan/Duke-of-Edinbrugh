@@ -1,0 +1,20 @@
+print("Welcome to THE MAD LIBS")
+print("")
+print("Please answer the following question:")
+
+firstName=input("Enter a name >>>")
+secondName=input("Enter a name >>>")
+illness=input("Name an illness >>>")
+illness2=input("Enter an illness >>>")
+adjective=input("Enter an adjective >>>")
+adjective2=input("Enter an adjective >>>")
+lastname=input("Enter a last name >>>")
+
+
+print("")
+
+
+
+print("Here is your MAD LIBS:")
+print("")
+print("Dear School Nurse:",firstName,secondName,"will not be attending school today. He/she has come down with a case of",illness,"and has horrible",illness2,"and a/an",adjective,"fever. We have made an appointment with the",adjective2,"Dr.",lastname,".",firstName,"will be back to school as soon as possible.") 
