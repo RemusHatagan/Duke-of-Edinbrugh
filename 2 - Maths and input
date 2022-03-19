@@ -1,1 +1,23 @@
+# Video 1
 
+badGuySquashed = 23
+badGuySquashedPoints = 100
+bossSquashPoints = 1000
+badGuyScore = badGuySquashed * badGuySquashedPoints
+totalScore = (badGuySquashed * badGuySquashedPoints) + bossSquashPoints
+print("Bad guy points =",badGuyScore)
+priut("Boss points =",bossSquashPoints)
+print("Total points =",totalScore)
+
+# Video 2
+
+username = input("Enter your username >>> ")
+firstName = input("Enter your first name >>> ")
+lastName = input("Enter your last name >>> ")
+print("")
+print("Please confirm your details :")
+print("")
+print("Your user name is ",username)
+print("Your first name is ",firstName)
+print("Your last name is ",lastName)
+print("Are these detail correct? (Y/N) >>>")
