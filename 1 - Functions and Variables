@@ -1,1 +1,27 @@
+# Video 1 
 
+print("I")
+print("am")
+print("coding!")
+print("")
+print("Can you?")
+
+#Video 2 
+
+print("")
+print("Football Score")
+team1name = "Germany"
+team2name = "Italy"
+team1goals = 4
+team2goals = 10
+print(team1name + " > " + str(team1goals) + " - " + team2name + " > " + str(team2goals))
+
+# Video 3 
+
+print("In today's swim race its >>> ")
+print("")
+Swimmer1Name = "Raj"
+Swimmer2Name = "Saha"
+Swimmer3Name = "Rik"
+
+print(Swimmer1Name,"vs",Swimmer2Name,"vs",Swimmer3Name)
