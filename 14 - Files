@@ -1,1 +1,82 @@
+# Challenge 1
 
+file = open("5numbers.txt", "w")
+file.write("5 , 8 , 12, 69, 420")
+file.close()
+print("Numbers written succesfully!")
+
+# Challenge 2
+
+file = open("names.txt", "w")
+file.write("John\nMichael\nBob\nDenis\nAndrew")
+file.close()
+print("Names written succesfully!")
+
+# Challenge 3
+
+file = open("names.txt", "r")
+for i in "names.txt":
+    print(file.read())
+file.close()
+
+# Challenge 4
+
+file = open("names.txt", "r")
+print(file.readlines())
+file.close()
+
+file = open("names.txt", "r")
+print(file.readline())
+file.close()
+
+# Challenge 5
+
+def fileread():
+    file = open("names.txt", "r")
+    print(file.readlines())
+    file.close()
+    
+fileread()
+
+file2 = open("names.txt", "a")
+    
+newName = str(input("Enter a name >>> "))
+concatinate = '\n'
+
+file2.write(newName)
+file2.write(concatinate)
+file2.close()
+
+fileread()
+
+# Challenge 6
+
+def userAdd():
+    file = open("newFile.txt", "a")
+    
+    firstName = str(input("Enter the first name >>> "))
+    lastName = str(input("Enter the last name >>> "))
+    age = str(input("Enter the age >>> "))
+    
+    file.write('\n')
+    file.write(firstName)
+    file.write(" ")
+    file.write(lastName)
+    file.write('\n')
+    file.write(age)
+    file.write('\n')
+    file.close()
+    
+    print("")
+    print("Data saved\nopen newFile.txt")
+    
+def start():
+    
+    loop = True
+    while loop == True:
+        choice = str(input("Do you want to enter a user? (Y/N) >>> ").lower())
+        if choice == "y":
+            userAdd()
+        else:
+            loop = False
+start()
