@@ -21,7 +21,6 @@ for lines in resultsList.readlines():
     resultsArray.append(line.split(","))
 resultsList.close()
 
-
 #Menu is displayed
 
 def menu():
@@ -61,14 +60,26 @@ if menuChoice == "A":
         print("Fixture not found in database - Please try again ")
         menu()
             
+# Option B
+
 if menuChoice == "B":
-    print(resultsArray)
-    
+    time.sleep(0.1)
+    print("Displaying fixtures that have not been played ... ")
+    print("Printing fixtures ... ")
+    for counter in range(len(fixtureArray)):
+        if fixtureArray[counter][5] != "Y":
+            print("")
+            time.sleep(0.2)
+            print("{0:15}{1:15}{2:15}{3:15}{4:15}".format("Fixture","Fixture","Fixture","Player 1","Player 2","Winning"))
+            print("{0:15}{1:15}{2:15}{3:15}{4:15}".format("Number","Date","Time","Nickname","Nickname","Nickname"))
+            print("{0:15}{1:15}{2:15}{3:15}{4:15}{5:15}".format(fixtureArray[counter][0],fixtureArray[counter][1],fixtureArray[counter][2],fixtureArray[counter][3],fixtureArray[counter][4],fixtureArray[counter][5]))
+
+# Option C            
+
 if menuChoice == "C":
-    print("siu")
-    
-if menuChoice == "Q":
-    exit()
+    time.sleep(0.1)
+    for counter in range(len(firesideResults)):
+
+        # use bubble sort from Subprograms 3.py from github
 
 menu()
-
