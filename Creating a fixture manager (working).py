@@ -2,6 +2,7 @@
 # Opens the fixtures and results and stores them as arrays
 
 import time
+import math
 
 fixtureList = open("firesideFixtures.txt" , "r")
 fixtureArray = []
@@ -14,12 +15,11 @@ fixtureList.close()
 resultsList = open("firesideResults.txt" , "r")
 resultsArray = []
 
-allResults = resultsList.read()
-
 for lines in resultsList.readlines():
     lines = lines.replace('\n' , "")
-    resultsArray.append(line.split(","))
+    resultsArray.append(lines.split(","))
 resultsList.close()
+
 
 #Menu is displayed
 
@@ -58,8 +58,7 @@ if menuChoice == "A":
     if fixtureChoice not in fixtureArray[counter][0]:
         time.sleep(0.2)
         print("Fixture not found in database - Please try again ")
-        menu()
-            
+
 # Option B
 
 if menuChoice == "B":
@@ -74,12 +73,18 @@ if menuChoice == "B":
             print("{0:15}{1:15}{2:15}{3:15}{4:15}".format("Number","Date","Time","Nickname","Nickname","Nickname"))
             print("{0:15}{1:15}{2:15}{3:15}{4:15}{5:15}".format(fixtureArray[counter][0],fixtureArray[counter][1],fixtureArray[counter][2],fixtureArray[counter][3],fixtureArray[counter][4],fixtureArray[counter][5]))
 
-# Option C            
+# Option C
+
+leaderboard = []
 
 if menuChoice == "C":
     time.sleep(0.1)
-    for counter in range(len(firesideResults)):
-
+    for counter in range(len(resultsArray)):
+        if resultsArray[counter][0] != "":
+            score = resultsArray[counter][2]*3
+            playerScore = resultsArray[0] ,",", score,'\n'
+            leaderboard.append(playerScore)
         # use bubble sort from Subprograms 3.py from github
-
-menu()
+    print(leaderboard)
+#menu()
+   
