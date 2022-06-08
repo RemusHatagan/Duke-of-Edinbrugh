@@ -75,16 +75,31 @@ if menuChoice == "B":
 
 # Option C
 
-leaderboard = []
+def bubbleSort(resultsArray):
+    n = len(resultsArray)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if int(resultsArray[j][2]) < int(resultsArray[j+1][2]) :
+                resultsArray[j], resultsArray[j+1] = resultsArray[j+1], resultsArray[j]
+    return resultsArray
+            
+scores = []
 
 if menuChoice == "C":
     time.sleep(0.1)
+    bubbleSort(resultsArray)
     for counter in range(len(resultsArray)):
-        if resultsArray[counter][0] != "":
-            score = resultsArray[counter][2]*3
-            playerScore = resultsArray[0] ,",", score,'\n'
-            leaderboard.append(playerScore)
-        # use bubble sort from Subprograms 3.py from github
-    print(leaderboard)
-#menu()
-   
+        resultsArray[counter][2] = int(resultsArray[counter][2])
+        scores.append(resultsArray[counter][2])
+    print("")
+    print("Printing leaderboard ...")
+    print(resultsArray)
+    print("")
+    print("")
+    
+for leadScore in range(len(scores)):
+        print("{0:30}{1:30}{2:30}{3:30}{4:30}".format("Player","Matches","Matches","Matches","Points"))
+        print("{0:30}{1:30}{2:30}{3:30}{4:30}".format("Nickname","Played","Won","Lost","Scored"))
+        print("")
+        print("{0:30}{1:30}{2:30}{3:30}{4:30}".format(resultsArray[leadScore][0],resultsArray[leadScore][1],str(resultsArray[leadScore][2]),resultsArray[leadScore][3],str(int(scores[leadScore])*3)))
+        print("")
